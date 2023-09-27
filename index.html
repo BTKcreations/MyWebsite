@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* CSS code for premium look (same styles as login and registration pages) */
+        body {
+            font-family: sans-serif;
+        }
+        .login-box {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        
+        .login-box h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .login-box form {
+            margin-top: 20px;
+        }
+        
+        .user-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .user-box input[type="text"],
+        .user-box input[type="password"] {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #333;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            background: transparent;
+        }
+        
+        .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #333;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+        
+        .user-box input[type="text"]:focus ~ label,
+        .user-box input[type="password"]:focus ~ label,
+        .user-box input[type="text"]:valid ~ label,
+        .user-box input[type="password"]:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #5d8cca;
+            font-size: 12px;
+        }
+        
+        .login-box a {
+            display: inline-block;
+            background: #5d8cca;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 25px;
+            transition: 0.5s;
+        }
+        
+        .login-box a:hover {
+            background: #4169e1;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Welcome</h2>
+        <p>Choose an option:</p>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+</body>
+</html>
